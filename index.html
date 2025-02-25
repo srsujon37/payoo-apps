@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payoo App</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -20,9 +25,18 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <style>
+      .outfit{
+      font-family: "Outfit", serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+}
+    </style>
+
 </head>
-<body class="bg-slate-800">
-    <section class="max-w-md min-h-screen bg-white mx-auto">
+<body class="bg-slate-800 outfit ">
+    <section class="max-w-md min-h-screen bg-[#F4F5F7] mx-auto">
 
         <header>
 
@@ -39,26 +53,26 @@
 
         </header>
         <!-- login section -->
-        <div class="hero bg-base-200 ">
+        <div class="hero  ">
           <div class="hero-content flex-col lg:flex-row-reverse">
 
-            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <div class="card bg-base-100 w-[400px]  shrink-0 shadow-xl">
               <form class="card-body">
                 <div class="form-control">
                   <label class="label">
-                    <span class="label-text">Mobile Number</span>
+                    <span class="label-text text-lg">Account Number</span>
                   </label>
-                  <input type="email" placeholder="Enter your number " class="input input-bordered" required />
+                  <input type="number" placeholder="Enter your number " class=" input rounded-3xl bg-[#F4F5F7]" required />
                 </div>
                 <div class="form-control">
                   <label class="label">
-                    <span class="label-text">4 Digit pin</span>
+                    <span class="label-text text-lg">Pin</span>
                   </label>
-                  <input type="password" placeholder="Enter 4 Digit Pin" class="input input-bordered" required />
+                  <input type="text" placeholder="Enter 4 Digit Pin" class="input rounded-3xl bg-[#F4F5F7]" required />
                   </label>
                 </div>
                 <div class="form-control mt-6">
-                  <button class="btn btn-primary">Login</button>
+                  <button id="login-btn" class="btn btn-primary bg-[#0874F2] hover:bg-black rounded-3xl border-none">Login</button>
                 </div>
               </form>
             </div>
@@ -68,6 +82,6 @@
 
 
 
-    <script src=""></script>
+    <script src="./script/login.js"></script>
 </body>
 </html>
